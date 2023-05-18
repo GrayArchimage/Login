@@ -1,13 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LoginTest : MonoBehaviour
 {
+    public Button btnLogin;
+    public Button btnShare;
+    
     void Start()
     {
-        WeChatLogin.Init();
+        btnLogin.onClick.AddListener(() =>
+        {
+            WeChatLogin.SendWxLogin();
+        });
         
-        WeChatLogin.Login();
+        btnShare.onClick.AddListener(() =>
+        {
+            WeChatLogin.Share();
+        });
     }
 }
