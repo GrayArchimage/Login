@@ -23,7 +23,7 @@ void _WechatLogin(char* appid,char* message)
 {
     //向微信注册appid:填写自己微信开放平台的appid信息
     NSString *weichatId = [NSString stringWithFormat:@"%s", appid];
-    NSString *UNIVERSAL_LINK = [NSString stringWithFormat:@"%s", "对应申请微信平台上的Universal Links"];
+    NSString *UNIVERSAL_LINK = [NSString stringWithFormat:@"%s", "d78e67a15f7e4cbfd124b22f9fc2acad.share2dlink.com"];
     [WXApi registerApp:weichatId universalLink:UNIVERSAL_LINK];
     
     if([WXApi isWXAppInstalled] ==false)
