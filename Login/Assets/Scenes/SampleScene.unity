@@ -255,7 +255,7 @@ GameObject:
   - component: {fileID: 317085965}
   - component: {fileID: 317085966}
   m_Layer: 0
-  m_Name: SDKCallBack
+  m_Name: WeChatResp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
