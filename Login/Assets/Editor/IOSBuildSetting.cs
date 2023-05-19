@@ -22,8 +22,6 @@ public class IOSBuildSetting
             string frameworkGuid = xcodeProj.GetUnityFrameworkTargetGuid();
             xcodeProj.AddFrameworkToProject(frameworkGuid, "WebKit.framework", true);
             xcodeProj.WriteToFile(projPath);
-        
-            xcodeProj.AddCapability(targetGuid, PBXCapabilityType.AssociatedDomains,"Unity-iPhone.entitlements",true);
 
             var plistPath = Path.Combine(path, "Info.plist");
             PlistDocument plist = new PlistDocument();
